@@ -1,0 +1,18 @@
+@import '../../node_modules/reset-css/sass/reset';
+@import './blocks/classFrame';
+@import './blocks/vars';
+@import './vendor/mixins';
+@import './blocks/fonts';
+@import './blocks/global';
+
+
+@import './components/logo';
+@import './components/menu';
+@import './components/hero';
+@import './components/interview';
+@import './components/order';
+@import './components/comments';
+@import './components/sliderComments';
+
+
+@import './components/media';

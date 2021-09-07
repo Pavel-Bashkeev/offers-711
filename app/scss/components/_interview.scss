@@ -1,0 +1,148 @@
+.interview {
+  &__title {
+    font: 600 20px / 30px $font;
+    font-style: italic;
+    background-color: #E4F8FD;
+    padding-left: 18px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+  }
+
+  &__img {
+    margin-bottom: 10px;
+  }
+
+
+  &__news {
+    max-width: 400px;
+    font-style: italic;
+    color: #6b6b6b;
+    margin-bottom: 35px;
+    font: 400 16px / 19px $font;
+  }
+}
+
+.talk {
+  &__title{
+    font: 700 20px / 24px $font;
+    margin-bottom: 20px;
+  }
+
+  &-question {
+    font-weight: 700;
+    margin-bottom: 35px;
+
+    &__text {
+      &--yellow {
+        background-color: yellow;
+        width: fit-content;
+      }
+    }
+  }
+
+  &-answer {
+    padding-right: 11px;
+
+    &__text {
+      margin-bottom: 30px;
+
+      &--accent {
+        font-weight: 700;
+      }
+    }
+
+    &__title {
+      color: #0099FF;
+      font: 700 25px /30px $font;
+      max-width: 360px;
+      text-align: center;
+    }
+    &__picture{
+      padding-bottom: 48px;
+      margin-bottom: 50px;
+    }
+  }
+}
+.picture-text--1{
+  top: 20px;
+  left: 6%;
+}
+.picture-text--2{
+  top: 38%;
+  left: 6%;
+}
+.picture-text--3{
+  right: 10%;
+  top: 35%;
+}
+.picture-text--4{
+  max-width: 160px;
+    text-align: center;
+    bottom: 0;
+    left: 8%;
+}
+.picture-text--5{
+  max-width: 160px;
+  text-align: center;
+  bottom: 25px;
+  right: 14%;
+}
+.talk-answer__present {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  &-img {
+    max-width:276px;
+    margin-bottom: 20px;
+  }
+  &-text{
+    font: 400 16px / 19px $font;
+    font-style: italic;
+    max-width: 270px;
+    text-align: center;
+    margin: 0 auto;
+    color: #6b6b6b;
+  }
+}
+
+.survey{
+  padding: 22px 15px;
+  background-color: #bb1336;
+  margin-bottom: 40px;
+  &__text{
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    max-width: 410px;
+    margin: 0 auto;
+  }
+}
+.product{
+  margin-bottom: 30px;
+  &__img{
+    max-width: 295px;
+    margin-left: 10%;
+  }
+}
+.talk-decor{
+  max-width: 400px;
+  z-index: 1;
+  margin-bottom: 40px;
+  &::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.32%, #000000 100%);
+    z-index: 0;
+  }
+  &__text{
+    color: $white;
+    max-width: 310px;
+    left: 18px;
+    bottom: 16px;
+    z-index: 1;
+  }
+}

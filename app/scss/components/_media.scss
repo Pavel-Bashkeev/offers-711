@@ -1,0 +1,126 @@
+@media (max-width:480px) {
+  .order .order-info {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 470px) {
+    .order .order-info__certificate {
+      width: 210px;
+    }
+
+    .order .order-info__img {
+      width: 90px;
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .picture-text--2 {
+    top: 35%;
+    left: 3%;
+  }
+
+  .picture-text--1 {
+    top: 16px;
+  }
+
+  .comments-answer {
+    margin-left: 3%;
+  }
+
+  .comment-actions {
+    margin-left: -61px;
+  }
+}
+
+@media (max-width:420px) {
+  .order .order-info {
+    padding: 16px 4px 22px 5px;
+  }
+
+  .order .order-info__banner {
+    left: 67px;
+  }
+}
+
+@media (max-width: 390px) {
+  .picture-text--1 {
+    top: 9px;
+  }
+
+  .picture-text--3 {
+    right: 2%;
+    top: 33%;
+  }
+
+  .picture-text--5 {
+    right: 1%;
+  }
+
+  .comment-actions {
+    margin-left: -90px;
+  }
+
+  .comments-answer .comment .comment-user .comment-user__content .comment-actions {
+    margin: 10px 0 0 -60px;
+  }
+}
+
+@media (max-width:375px) {
+  .order {
+    padding: 0px 18px;
+  }
+
+  .order .order-info__banner {
+    left: 51px;
+  }
+}
+@media (max-width: 360px) {
+  .comment-actions__btn {
+    font: 700 14px/19px Roboto;
+}
+}
+@media (max-width: 359px) {
+  .logo__img {
+    width: 190px;
+    height: 38px;
+  }
+
+  .hero__title {
+    font: 700 24px/30px "Myriad Pro";
+  }
+
+  .hero-box__title {
+    font: 700 20px/30px "Myriad Pro";
+    color: #fff;
+  }
+
+  .hero-box__subtitle {
+    font: 400 17px/22px "Myriad Pro";
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+  .picture-text--2 {
+    top: 33%;
+    left: 1%;
+  }
+
+  .picture-text--4 {
+    left: 2%;
+  }
+
+  .product__img {
+    max-width: 270px;
+  }
+}
+
+@media (max-width:350px) {
+  .order {
+    padding: 0 0px;
+  }
+  .comments {
+    padding: 37px 5px 100px;
+}
+}

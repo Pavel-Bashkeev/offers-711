@@ -1,0 +1,47 @@
+.hero {
+  padding-top: 36px;
+
+  &__title {
+    font: 700 30px / 36px $font;
+    color: $black;
+    margin-bottom: 35px;
+    padding-right: 35px;
+  }
+
+  &__date {
+    font: 400 16px / 19px $font;
+    color: #9C9C9C;
+    margin-bottom: 30px;
+  }
+
+}
+
+.hero-box {
+  position: relative;
+  z-index: 1;
+  &__decor{
+    left: 30%;
+    bottom: 6%;
+    z-index: 1;
+    width: fit-content;
+  }
+  &__subtitle{
+    font: 600 20px / 24px $font;
+    color:$black;
+    margin-bottom: 10px;
+    max-width: 325px;
+  }
+}
+.hero-descr{
+  padding: 44px 5px 30px 0px;
+
+  &__text{
+    font:400 20px / 24px $font;
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+    &--accent{
+      font-weight: 700;
+    }
+  }
+}
