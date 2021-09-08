@@ -19,28 +19,47 @@
 .hero-box {
   position: relative;
   z-index: 1;
-  &__decor{
+
+  &__decor {
     left: 30%;
     bottom: 6%;
     z-index: 1;
     width: fit-content;
   }
-  &__subtitle{
+
+  &__subtitle {
     font: 600 20px / 24px $font;
-    color:$black;
+    color: $black;
     margin-bottom: 10px;
     max-width: 325px;
   }
 }
-.hero-descr{
+
+.hero-descr {
   padding: 44px 5px 30px 0px;
 
-  &__text{
-    font:400 20px / 24px $font;
-    &:not(:last-child){
+  &__box {
+    max-width: 385px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    &-text {
+      padding: 19px 26px;
+      background-color: #3F7E8B;
+      font: 700 23px / 27px $font;
+      text-align: center;
+      color: $white;
+    }
+  }
+
+  &__text {
+    font: 400 20px / 24px $font;
+
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
-    &--accent{
+
+    &--accent {
       font-weight: 700;
     }
   }

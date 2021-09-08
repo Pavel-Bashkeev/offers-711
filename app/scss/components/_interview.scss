@@ -24,7 +24,7 @@
 }
 
 .talk {
-  &__title{
+  &__title {
     font: 700 20px / 24px $font;
     margin-bottom: 20px;
   }
@@ -42,13 +42,13 @@
   }
 
   &-answer {
-    padding-right: 11px;
 
     &__text {
       margin-bottom: 30px;
 
       &--accent {
         font-weight: 700;
+        text-decoration: underline;
       }
     }
 
@@ -58,91 +58,160 @@
       max-width: 360px;
       text-align: center;
     }
-    &__picture{
+
+    &__picture {
       padding-bottom: 48px;
       margin-bottom: 50px;
     }
   }
 }
-.picture-text--1{
-  top: 20px;
-  left: 6%;
-}
-.picture-text--2{
-  top: 38%;
-  left: 6%;
-}
-.picture-text--3{
-  right: 10%;
-  top: 35%;
-}
-.picture-text--4{
-  max-width: 160px;
-    text-align: center;
-    bottom: 0;
-    left: 8%;
-}
-.picture-text--5{
-  max-width: 160px;
-  text-align: center;
-  bottom: 25px;
-  right: 14%;
-}
+
 .talk-answer__present {
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
+  background-color: #faf7f8;
+  padding-bottom: 15px;
+
   &-img {
-    max-width:276px;
     margin-bottom: 20px;
   }
-  &-text{
-    font: 400 16px / 19px $font;
-    font-style: italic;
+
+  &-text {
+    font: 700 15px / 18px $font;
     max-width: 270px;
     text-align: center;
-    margin: 0 auto;
-    color: #6b6b6b;
+    color: #000000;
+  }
+
+  &-top {
+    top: 30px;
+    right: 20px;
+    text-align: left;
+    max-width: 350px;
+  }
+
+  &-left {
+    bottom: 45px;
+    left: 21.5%;
+  }
+
+  &-right {
+    bottom: 27px;
+    right: 10%;
+    max-width: 150px;
   }
 }
 
-.survey{
-  padding: 22px 15px;
-  background-color: #bb1336;
-  margin-bottom: 40px;
-  &__text{
-    color: $white;
-    font-weight: 700;
-    text-align: center;
-    max-width: 410px;
-    margin: 0 auto;
+.talk-decor {
+  margin-bottom: 25px;
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    max-width: 314px;
+    font: 'italic'400 20px / 24px $font;
+    color: #6f6f6f;
   }
 }
-.product{
-  margin-bottom: 30px;
-  &__img{
-    max-width: 295px;
-    margin-left: 10%;
+
+.talk-answer__list {
+  counter-reset: item;
+
+  &-item {
+    margin-bottom: 30px;
+  }
+
+  &-title {
+    font: 700 20px/24px $font;
+    margin-bottom: 30px;
+
+    &::before {
+      counter-increment: item;
+      content: counter(item)'.';
+    }
+  }
+
+  &-text {
+    &--accent {
+      font-weight: 700;
+      text-decoration: underline;
+    }
   }
 }
-.talk-decor{
-  max-width: 400px;
-  z-index: 1;
-  margin-bottom: 40px;
-  &::after{
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.32%, #000000 100%);
-    z-index: 0;
+
+.causes {
+  &__items {
+    min-height: 360px;
+    background-image: url('../images/dest/sectionInterview/interview-item-3.jpg');
+    @extend %bg-cover;
+    justify-content: space-around;
+    padding-top: 19px;
   }
-  &__text{
-    color: $white;
-    max-width: 310px;
-    left: 18px;
-    bottom: 16px;
-    z-index: 1;
+
+  &__item {
+    align-items: center;
+    width: 50%;
+    padding-left: 100px;
+    &-text {
+      max-width: 117px;
+      font: 400 19px / 23px $font;
+
+      &--accent {
+        max-width: 160px;
+        color: $white;
+        font: 400 16px / 19px $font;
+        transform: translateX(-70px);
+        span {
+          background-color: #E22142;
+          width: fit-content;
+          white-space: nowrap;
+          padding: 0 5px;
+        }
+      }
+    }
   }
 }
+
+// .survey{
+//   padding: 22px 15px;
+//   background-color: #bb1336;
+//   margin-bottom: 40px;
+//   &__text{
+//     color: $white;
+//     font-weight: 700;
+//     text-align: center;
+//     max-width: 410px;
+//     margin: 0 auto;
+//   }
+// }
+// .product{
+//   margin-bottom: 30px;
+//   &__img{
+//     max-width: 295px;
+//     margin-left: 10%;
+//   }
+// }
+// .talk-decor{
+//   max-width: 400px;
+//   z-index: 1;
+//   margin-bottom: 40px;
+//   &::after{
+//     content: '';
+//     position: absolute;
+//     top:0;
+//     left:0;
+//     right: 0;
+//     bottom: 0;
+//     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.32%, #000000 100%);
+//     z-index: 0;
+//   }
+//   &__text{
+//     color: $white;
+//     max-width: 310px;
+//     left: 18px;
+//     bottom: 16px;
+//     z-index: 1;
+//   }
+// }
