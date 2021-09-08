@@ -1,0 +1,51 @@
+.table-compare {
+  border: 2px solid #3F7E8B;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  &__title{
+    padding: 9px 23px;
+    font: 400 20px/20px $font;
+  }
+  &__title-row {
+    border-bottom: 2px solid #3F7E8B;
+    &:not(:first-child){
+      border-top: 2px solid #3F7E8B;
+    }
+  }
+
+  &__title-row {
+    .table-compare__title {
+      max-width: 100%;
+    }
+  }
+
+  &__row {
+    &-elem {
+      &:not(:last-child) {
+        border-bottom: 2px solid #3F7E8B;
+      }
+    }
+
+    &-text {
+      flex: 1;
+      font: 400 14px / 14px $font;
+      flex-direction: column;
+      &--accent{
+        font: 700 30px /30px $font;
+      }
+    }
+
+    &-title {
+      font: 700 20px/20px $font;
+      max-width: 112px;
+      width: 100%;
+      padding: 9px 23px;
+      flex: 1;
+      &:not(:last-child) {
+        border-right: 2px solid #3F7E8B;
+      }
+
+     
+    }
+  }
+}

@@ -58,14 +58,112 @@
       max-width: 360px;
       text-align: center;
     }
+  }
+}
 
-    &__picture {
-      padding-bottom: 48px;
-      margin-bottom: 50px;
+.talk-decor {
+  margin-bottom: 25px;
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    max-width: 314px;
+    font: 'italic'400 20px / 24px $font;
+    color: #6f6f6f;
+    &--full{
+      max-width: 100%;
     }
   }
 }
 
+.talk-answer__list {
+  counter-reset: item;
+
+  &-item {
+    margin-bottom: 30px;
+  }
+
+  &-title {
+    font: 700 20px/24px $font;
+    margin-bottom: 30px;
+
+    &::before {
+      counter-increment: item;
+      content: counter(item)'.';
+    }
+  }
+
+  &-text {
+    &--accent {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}
+
+.talk-present{
+  &__top{
+    max-width: 251px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &-title{
+      font: 700 20px / 24px $font;
+      text-align: center;
+      margin-bottom: -25px;
+      z-index: 1;
+      position: relative;
+    }
+    &-text{
+      max-width: 130px;
+      font: 400 16px / 19px $font;
+      margin-top: -40px;
+    margin-left: 15px;
+    }
+  }
+  &__bottom{
+    max-width: 370px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &-title{
+      font: 700 20px / 24px $font;
+      text-align: center;
+      margin-bottom: -45px;
+      z-index: 1;
+      position: relative;
+    }
+    &-text{
+      max-width: 340px;
+      font: 400 16px / 19px $font;
+      margin-top: -65px;
+    }
+  }
+}
+.product-img{
+  width: 130px;
+  margin-bottom: 20px;
+}
+.product-composition{
+  padding: 0 15px;
+  margin-bottom: 20px;
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+  &__img{
+    width: 130px;
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 10px;
+    font: 700 19px / 24px $font;
+  }
+  &__descr{
+    font: 400 19px / 24px $font;
+  }
+}
 .talk-answer__present {
   margin-top: 40px;
   margin-bottom: 45px;
@@ -101,117 +199,3 @@
     max-width: 150px;
   }
 }
-
-.talk-decor {
-  margin-bottom: 25px;
-
-  &__img {
-    margin-bottom: 20px;
-  }
-
-  &__text {
-    max-width: 314px;
-    font: 'italic'400 20px / 24px $font;
-    color: #6f6f6f;
-  }
-}
-
-.talk-answer__list {
-  counter-reset: item;
-
-  &-item {
-    margin-bottom: 30px;
-  }
-
-  &-title {
-    font: 700 20px/24px $font;
-    margin-bottom: 30px;
-
-    &::before {
-      counter-increment: item;
-      content: counter(item)'.';
-    }
-  }
-
-  &-text {
-    &--accent {
-      font-weight: 700;
-      text-decoration: underline;
-    }
-  }
-}
-
-.causes {
-  &__items {
-    min-height: 360px;
-    background-image: url('../images/dest/sectionInterview/interview-item-3.jpg');
-    @extend %bg-cover;
-    justify-content: space-around;
-    padding-top: 19px;
-  }
-
-  &__item {
-    align-items: center;
-    width: 50%;
-    padding-left: 100px;
-    &-text {
-      max-width: 117px;
-      font: 400 19px / 23px $font;
-
-      &--accent {
-        max-width: 160px;
-        color: $white;
-        font: 400 16px / 19px $font;
-        transform: translateX(-70px);
-        span {
-          background-color: #E22142;
-          width: fit-content;
-          white-space: nowrap;
-          padding: 0 5px;
-        }
-      }
-    }
-  }
-}
-
-// .survey{
-//   padding: 22px 15px;
-//   background-color: #bb1336;
-//   margin-bottom: 40px;
-//   &__text{
-//     color: $white;
-//     font-weight: 700;
-//     text-align: center;
-//     max-width: 410px;
-//     margin: 0 auto;
-//   }
-// }
-// .product{
-//   margin-bottom: 30px;
-//   &__img{
-//     max-width: 295px;
-//     margin-left: 10%;
-//   }
-// }
-// .talk-decor{
-//   max-width: 400px;
-//   z-index: 1;
-//   margin-bottom: 40px;
-//   &::after{
-//     content: '';
-//     position: absolute;
-//     top:0;
-//     left:0;
-//     right: 0;
-//     bottom: 0;
-//     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.32%, #000000 100%);
-//     z-index: 0;
-//   }
-//   &__text{
-//     color: $white;
-//     max-width: 310px;
-//     left: 18px;
-//     bottom: 16px;
-//     z-index: 1;
-//   }
-// }

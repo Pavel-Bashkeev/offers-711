@@ -1,0 +1,68 @@
+.answer-table {
+  border: 2px solid #3F7E8B;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  &__title-row {
+    border-bottom: 2px solid #3F7E8B;
+  }
+
+  &__title {
+    padding: 14px 10px;
+    flex: 1;
+    text-align: center;
+    font: 900 20px / 24px $font;
+
+    &:not(:last-child) {
+      border-right: 2px solid #3F7E8B;
+    }
+  }
+
+  &__row {
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: 2px solid #3F7E8B;
+    }
+  }
+
+  &__text {
+    width: calc(50% + 1px);
+    text-align: center;
+    font: 400 17px / 20px $font;
+    padding: 0 24px;
+    flex: 1;
+  }
+
+  &__list {
+    width: calc(50% + 1px);
+    padding: 15px 0;
+    border-left: 2px solid #3F7E8B;
+
+    &-item {
+      padding-left: 38px;
+      font: 400 17px / 20px $font;
+      padding-right: 12px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:13px;
+        @extend %bg-cover;
+        width: 19px;
+        height: 14px;
+        background-image: url('../images/dest/sprite.svg#check');
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &--accent{
+        padding-left: 13px;
+        font: 'italic' 400 15px / 18px $font;
+        color: #6f6f6f;
+      }
+    }
+  }
+}

@@ -1,30 +1,4 @@
-@media (max-width:480px) {
-  .order .order-info {
-    justify-content: space-between;
-  }
-
-  @media (max-width: 470px) {
-    .order .order-info__certificate {
-      width: 210px;
-    }
-
-    .order .order-info__img {
-      width: 90px;
-      margin-right: 0px;
-    }
-  }
-}
-
 @media (max-width: 450px) {
-  .picture-text--2 {
-    top: 35%;
-    left: 3%;
-  }
-
-  .picture-text--1 {
-    top: 16px;
-  }
-
   .comments-answer {
     margin-left: 3%;
   }
@@ -35,29 +9,43 @@
 }
 
 @media (max-width:420px) {
-  .order .order-info {
-    padding: 16px 4px 22px 5px;
+  .certificate {
+    min-height: 590px;
   }
 
-  .order .order-info__banner {
-    left: 67px;
+  .form__input {
+    height: 35px;
+  }
+
+  .form__btn {
+    height: 35px;
+    font: 700 20px/38px "Myriad Pro";
+  }
+
+  .certificate__text {
+    max-width: 310px;
+    margin-bottom: 15px;
+    padding: 5px 5px;
+  }
+
+  .certificate__item {
+    margin-left: -20px;
+  }
+
+  .certificate__offer {
+    max-width: 310px;
+  }
+
+  .causes__items {
+    min-height: 290px;
+  }
+
+  .causes__item {
+    padding-left: 85px;
   }
 }
 
 @media (max-width: 390px) {
-  .picture-text--1 {
-    top: 9px;
-  }
-
-  .picture-text--3 {
-    right: 2%;
-    top: 33%;
-  }
-
-  .picture-text--5 {
-    right: 1%;
-  }
-
   .comment-actions {
     margin-left: -90px;
   }
@@ -68,59 +56,83 @@
 }
 
 @media (max-width:375px) {
-  .order {
-    padding: 0px 18px;
+  .certificate {
+    min-height: 530px
   }
 
-  .order .order-info__banner {
-    left: 51px;
+  .certificate__offer {
+    max-width: 264px;
+    padding: 0 9px;
+    text-align: center;
+    font: 400 14px/16px "Myriad Pro";
+    margin-bottom: 48px;
+    margin-top: 11px
   }
+
+  .certificate__text {
+    border: 1px solid #000;
+    padding: 5px 6px;
+    max-width: 280px;
+    font: 400 14px/14px "Myriad Pro";
+    text-align: center;
+    margin-bottom: 17px
+  }
+
+  .certificate__discount {
+    font: 400 13px/16px "Myriad Pro";
+    width: 200px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: -50px
+  }
+
+  .certificate__title {
+    font: 700 20px/36px "Myriad Pro";
+    margin-bottom: 0;
+    margin-top: auto
+  }
+
+  .certificate__item {
+    color: #2356db;
+    font: 400 13px/20px "Myriad Pro";
+    margin-bottom: 10px
+  }
+
+  .causes__item {
+    padding-left: 70px;
+
+    &:last-child {
+      padding-left: 10px;
+    }
+
+
+  }
+
+  .causes__item-text--accent {
+
+    transform: translateX(0px);
+  }
+  .answer-table__list-item::before {
+    top: 0;
+    left: 0px;
 }
+.answer-table__list-item {
+  padding-left: 21px;
+  font: 400 15px/20px "Myriad Pro";
+  padding-right: 2px;
+  position: relative;
+}
+}
+
 @media (max-width: 360px) {
   .comment-actions__btn {
     font: 700 14px/19px Roboto;
-}
-}
-@media (max-width: 359px) {
-  .logo__img {
-    width: 190px;
-    height: 38px;
-  }
-
-  .hero__title {
-    font: 700 24px/30px "Myriad Pro";
-  }
-
-  .hero-box__title {
-    font: 700 20px/30px "Myriad Pro";
-    color: #fff;
-  }
-
-  .hero-box__subtitle {
-    font: 400 17px/22px "Myriad Pro";
-    color: #fff;
-    margin-bottom: 4px;
-  }
-
-  .picture-text--2 {
-    top: 33%;
-    left: 1%;
-  }
-
-  .picture-text--4 {
-    left: 2%;
-  }
-
-  .product__img {
-    max-width: 270px;
   }
 }
 
 @media (max-width:350px) {
-  .order {
-    padding: 0 0px;
-  }
+
   .comments {
     padding: 37px 5px 100px;
-}
+  }
 }
